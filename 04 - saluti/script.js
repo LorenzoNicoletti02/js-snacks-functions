@@ -5,9 +5,24 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+/**
+ * Description placeholder
+ *
+ * @param {string} name
+ * @returns {string}
+ */
+
+function helloName(name) {
+    if (isNaN(name)) {
+        return "Ciao " + name;
+    }
+    return "Attenzione non è una stringa"; 
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(helloName(name));
+
 
 
 
