@@ -20,7 +20,7 @@ function vocalsCount(parola) {
             count++;
         }
     }
-    return count;
+    return [count];
 }
 
 
