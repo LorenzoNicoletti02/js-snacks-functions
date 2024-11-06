@@ -17,7 +17,7 @@ function chooseByLetter(namesArray, letters) {
     const result = []; // Array delle iniziali
     for (let i = 0; i < namesArray.length; i++) {
         if (namesArray[i][0] === letters) {
-            result.push(namesArray[1]);
+            result.push(namesArray[i]);
         }
     }
     return result;
