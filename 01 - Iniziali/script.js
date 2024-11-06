@@ -2,27 +2,25 @@
  array con le iniziali di ogni parola dell'array fornito */
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
-const firstCharArray = [];
 
 
 // Dichiara la funzione qui.
 /**
  * Description placeholder
  *
- * @param {string} word
- * @returns {string}
+ * @param {string} namesArray
+ * @returns {Array}
  */
 
-function char(word) {
-    const curChar = word[0];
-    return curChar
-}
-
-for (let i = 0; i < names.length; i++) {
-    const curName = names[i];
-    firstCharArray.push(char(curName));
+function firstChar(namesArray) {
+    const allInitials = []; // Array delle iniziali
+    for (let i = 0; i < names.length; i++) {
+        allInitials.push(namesArray[i][0]); // Aggiunge la prima lettera
+    }
+    return allInitials;
 }
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
-console.log(firstCharArray);
+const allInitials = firstChar(names);
+console.log(allInitials);
